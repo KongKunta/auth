@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <div>
       <h1> Hello World </h1>
-      <Link key="forbidden" href="/forbidden">
-        <p>Forbidden</p>
+      <Link key="home" href="/home">
+        <p>Home</p>
       </Link>
     </div>
   );
