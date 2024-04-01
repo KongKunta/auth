@@ -5,6 +5,7 @@ import dbConnect from "./dbConnect";
 
 export default async function connect(previousState: any, formData: FormData) {
   await dbConnect();
+
   const userObj = {
     name: formData.get("name"),
     password: formData.get("password"),
