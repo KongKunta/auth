@@ -20,7 +20,6 @@ export const options: NextAuthOptions = {
         await dbConnect();
         const user = await User.findOne({ name: credentials.username });
         if (user && user.password === credentials.password) {
-          console.log("user found");
           return user;
         } else {
           return null;
